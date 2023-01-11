@@ -28,10 +28,6 @@ header {
     font-size: 1.5rem;
 }
 
-.logo:hover {
-    cursor: default;
-}   
-
 .logo span {
     color: #0096FF;
 }
@@ -74,6 +70,19 @@ nav li i:hover {
     cursor: pointer;
     color: #0096FF;
     transition: all 500ms;
+}
+
+#github:active {
+    color:#0096FF;
+}
+
+.toggle-menu {
+    text-decoration: none;
+    color: whitesmoke;
+    position: absolute;
+    top: 2rem;
+    right: 3.25rem;
+    display: none;
 }
 
 
@@ -201,4 +210,45 @@ main {
     width: 98%;
 }
 
+@media only screen and (max-width: 810px) {
+    #main-container {
+        display: flex;
+        align-content: center;
+    }
 
+    #main-left {
+        display: none;
+    }
+
+    #main-right {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .info-container {
+        display: block;
+    }
+
+    .temp-container-right {
+        text-align: center;
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    #sun {
+        position: absolute;
+        top: 2rem;
+    }
+
+
+
+}
